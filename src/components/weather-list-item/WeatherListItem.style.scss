@@ -1,0 +1,50 @@
+@import '/src/style/variables';
+
+.weather-list-item {
+  display: flex;
+  padding: 0.8rem;
+  border: 1px solid $app-orange;
+  background: none;
+  transition: background-color 0.25s ease-in;
+  min-width: 290px;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: $app-orange;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    .city-name {
+      font-size: 1.2rem;
+      font-weight: $bold;
+    }
+
+    .temperature {
+      .current {
+        font-size: 2.5rem;
+        font-weight: $light;
+      }
+
+      .daily-range {
+        .min, .max {
+          font-weight: $light;
+          font-size: 0.9rem;
+        }
+      }
+
+    }
+  }
+
+  .pictographic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}

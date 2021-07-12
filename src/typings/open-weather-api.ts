@@ -17,16 +17,16 @@ export interface OpenWeatherAPIResponse {
   cod: number;
 }
 
-export interface Clouds {
+interface Clouds {
   all: number;
 }
 
-export interface Coord {
+interface Coord {
   lon: number;
   lat: number;
 }
 
-export interface Main {
+interface Main {
   temp: number;
   feels_like: number;
   temp_min: number;
@@ -35,7 +35,7 @@ export interface Main {
   humidity: number;
 }
 
-export interface Sys {
+interface Sys {
   type: number;
   id: number;
   country: string;
@@ -43,14 +43,14 @@ export interface Sys {
   sunset: number;
 }
 
-export interface Weather {
+interface Weather {
   id: number;
   main: string;
   description: string;
   icon: string;
 }
 
-export interface Wind {
+interface Wind {
   speed: number;
   deg: number;
 }

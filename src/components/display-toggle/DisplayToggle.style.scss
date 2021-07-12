@@ -1,0 +1,15 @@
+@import "/src/style/variables";
+
+#display-toggle {
+  span {
+    font-weight: $light;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.selected {
+      font-weight: $bold;
+    }
+  }
+}

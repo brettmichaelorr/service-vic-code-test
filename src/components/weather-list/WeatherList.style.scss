@@ -1,0 +1,39 @@
+@import '/src/style/variables';
+
+#weather-list {
+  header {
+    background-color: $app-blue;
+    padding: 2rem;
+    color: white;
+    text-size: 1.5rem;
+    font-weight: $bold;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    padding-top: 2rem;
+
+    .list, .last-updated {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .last-updated {
+      font-weight: $light;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    p {
+      font-size: 0.8rem;
+      font-weight: $light;
+    }
+  }
+}

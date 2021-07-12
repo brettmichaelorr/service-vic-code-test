@@ -1,20 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import "./style/main.scss";
+import { WeatherList } from "./components/weather-list/WeatherList";
+import { DataProvider } from "./StateManagement";
 
-function App() {
-  return (
+const App = () => (
+  <DataProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Service Victoria - Weather React App
-        </p>
-      </header>
-      <footer>
-        Website logo courtesy of Muammar Khalid from the Noun Project.
-      </footer>
+      <WeatherList />
     </div>
-  );
-}
+  </DataProvider>
+);
 
 export default App;
